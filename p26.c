@@ -1,0 +1,35 @@
+/*Program to multiply two complex numbers*/
+#include<stdio.h>
+#include<conio.h>
+typedef struct
+{
+	double rp;
+	double ip;
+}complex;
+
+complex calculate(complex p, complex q)
+{
+	complex m;
+	
+	m.rp = (p.rp * q.rp) - (p.ip *  q.ip);
+	m.ip = (p.rp * q.ip) + (p.ip  * q.rp);
+	return (m);
+}
+
+void main()
+{
+	complex n1, n2, mul;
+	
+	printf("Enter the first complex number: ");
+	scanf("%lf %lf",&n1.rp, &n1.ip);
+
+	printf("Enter the second complex number: ");
+	scanf("%lf %lf",&n2.rp, &n2.ip);
+
+	mul = calculate(n1, n2);
+
+	printf("\nThe multiple of the two complex numbers is: \n");
+	printf("%.2lf + %.2lfi",mul.rp, mul.ip);
+
+	getch();
+}
