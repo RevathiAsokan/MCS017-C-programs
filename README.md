@@ -4,7 +4,10 @@
                                        Master of Computer Appilications(MCA)
 
 About repository:
-Includes 33 programs pertaining to MCA I sem, course code MCS017 - C lab
+MCA I sem, course code MCS017 - C lab
+- Includes 32 programs
+- Lab manual
+- Instruction file that helps you to work with c in notepad++
 
 Built with:
 Notepad++ using gcc compiler
