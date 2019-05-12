@@ -2,31 +2,6 @@
 #include<stdio.h>
 #include<conio.h>
 int a[10][10], b[10][10], r[10][10], n, i, j,k;
-void main()
-{
-	int choice;
-	input();
-	printf("\n Select:");
-	printf("\n 1. To add two matrices "); 
-	printf("\n 2. To subtract two matrices");
-	printf("\n 3. To multiply two matrices");
-	printf("\n Enter your choice: ");
-	scanf("%d",&choice);
-
-	switch(choice)
-	{
-		case 1: add();
-				break;
-		case 2: sub();
-				break;
-		case 3: mul();
-				break;
-		default: printf("\nInvalid input");
-	}
-	display();
-	getch();
-}
-
 void input()
 {	
 	printf("Enter the order of the matrix: ");
@@ -81,4 +56,29 @@ void display()
 		}
 		printf("\n");
 	}
+}
+
+void main()
+{
+	int choice;
+	input();
+	printf("\n Select:");
+	printf("\n 1. To add two matrices "); 
+	printf("\n 2. To subtract two matrices");
+	printf("\n 3. To multiply two matrices");
+	printf("\n Enter your choice: ");
+	scanf("%d",&choice);
+
+	switch(choice)
+	{
+		case 1: add();
+				break;
+		case 2: sub();
+				break;
+		case 3: mul();
+				break;
+		default: printf("\nInvalid input");
+	}
+	display();
+	getch();
 }
